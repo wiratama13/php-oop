@@ -2,7 +2,7 @@
 
 require_once "database.php";
 
-if(!$user->isLoggedIn()){
+if (!$user->isLoggedIn()) {
     header("location: login.php");
 }
 
@@ -16,6 +16,7 @@ if ($_SESSION['level'] != 'user') {
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,13 +24,14 @@ if ($_SESSION['level'] != 'user') {
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
         <div class="info">
             <h1> Halo, <?php echo $currentUser['name'] ?> anda login sebagai user
-        <br>
-        login kembali sebagai admin agar bisa melakukan edit data
-    </h1>
+                <br>
+                login kembali sebagai admin agar bisa melakukan edit data di admin
+            </h1>
         </div>
 
         <a href="logout.php" class="d-flex justify-content-center align-items-center">
@@ -37,4 +39,5 @@ if ($_SESSION['level'] != 'user') {
         </a>
     </div>
 </body>
+
 </html>
