@@ -7,5 +7,4 @@
     $id = $_SESSION['level'] = 'admin';
     $sesi = $db->getById('users','id', $id);
 
-
 ?>
