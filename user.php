@@ -28,7 +28,7 @@ if ($_SESSION['level'] != 'user') {
         <div class="info">
             <h1> Halo, <?php echo $currentUser['name'] ?> anda login sebagai user
         <br>
-        login kembali agar  bisa melakukan edit data
+        login kembali sebagai admin agar bisa melakukan edit data
     </h1>
         </div>
 
